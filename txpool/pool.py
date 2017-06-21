@@ -480,6 +480,8 @@ class Worker(object):
 
 class WorkerProtocol(NetstringReceiver, ProcessProtocol):
 
+    MAX_LENGTH = sys.maxsize
+
     def __init__(self, worker):
         self.__worker = worker
 
